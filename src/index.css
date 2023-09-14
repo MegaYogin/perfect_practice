@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Add your custom CSS here*/
+
+.full-height-scrollable {
+    overflow: auto;
+    height: calc(100vh - 84px);
+}
+.perfect-gradient {
+    background-image: linear-gradient(to right, #0c5c9e, #14a32c); /* Измените цвета по вашему усмотрению */
+  /* Текст становится прозрачным, но видимым на фоне градиента */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
