@@ -3,6 +3,7 @@ import './index.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import { createPinia } from 'pinia'
 
 import Home from './components/Home.vue';
 import Asanas from './components/Asanas.vue';
@@ -29,7 +30,8 @@ const router = createRouter({
 
 const app = createApp(App);
 
-// Подключите маршрутизатор к корневому экземпляру Vue
+const pinia = createPinia(); 
+app.use(pinia);
 app.use(router);
 
 app.mount('#app');

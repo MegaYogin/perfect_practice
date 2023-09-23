@@ -33,6 +33,7 @@
 <script>
 import asanas from './data/asanas.js';
 import { PlusIcon } from '@heroicons/vue/24/outline';
+import { useAsanaStore } from '/src/stores/asanaStore.js';
 
 export default {
   data() {
